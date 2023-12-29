@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "productName": "Moto G 5",
+      "quantity": "10",
+      "price": "10000"
+    },
+    {
+      "id": "2",
+      "productName": "Samsung",
+      "quantity": "100",
+      "price": "30000"
+    },
+    {
+      "id": "3",
+      "productName": "Lenovo Think Pad",
+      "quantity": "100",
+      "price": "130000"
+    },
+    {
+      "id": "ORRT7bwPGrc-6Dt8io6xz",
+      "productName": "SSD",
+      "quantity": "50",
+      "price": "105"
+    }
+  ]
+}
