@@ -29,6 +29,7 @@ function Products(){
                     <th>Product Name</th>
                     <th>Quantity</th>
                     <th>Price</th>
+                    <th>Actions</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -39,6 +40,7 @@ function Products(){
                                 <td><a href="#" onClick={()=>handleOpen(product.id)}>{product.productName}</a></td>
                                 <td>{product.quantity}</td>
                                 <td>{product.price}</td>
+                                <td><Link to={`/update/${product.id}`}>Update</Link></td>
                             </tr>
                         )
                     })

@@ -1,7 +1,9 @@
 import {useState} from "react";
-import {nanoid} from 'nanoid'
-import './addproduct.styles.css'
+import {nanoid} from 'nanoid';
 import axios from "axios";
+import Form from "../form.component/form.component";
+import './adpr.style.css'
+
 const defFormFields = {
     id: "",
     productName: "",
@@ -34,18 +36,7 @@ const AddProduct = () => {
     return (
         <div>
             <h1>Add Product</h1>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="productName">Product Name:</label>
-                <input required={true} type="text" id="productName"
-                       value={productName} name="productName" onChange={handleOnChange}/>
-                <label htmlFor="quantity">Quantity:</label>
-                <input required={true} type="text" id="quantity"
-                       value={quantity} name="quantity" onChange={handleOnChange}/>
-                <label htmlFor="price">Price:</label>
-                <input required={true} type="text" id="price"
-                       value={price} name="price" onChange={handleOnChange}/>
-                <input type="submit" value="Submit"/>
-            </form>
+            <Form formFields={formFields} handleSubmit={handleSubmit} handleOnChange={handleOnChange}/>
         </div>
     )
 
